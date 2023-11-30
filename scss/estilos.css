@@ -1,0 +1,427 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+/*body*/
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+section p {
+  color: aliceblue;
+  font-size: 0.5rem;
+}
+
+/*variables*/
+/*Pagina conocenos*/
+.estilosletras {
+  color: #FF0000;
+}
+
+.parrafoestilo {
+  font-size: 1.3rem;
+}
+
+.banner1 {
+  background-image: url(../img/especies.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 150px 0px;
+  text-align: center;
+  text-shadow: 0px 0px 2px rgba(27, 25, 25, 0.6);
+  margin: 35px;
+}
+.banner1 .conocenos1 {
+  font-size: 4rem;
+  color: blanchedalmond;
+}
+
+.espacio {
+  margin: 50px;
+}
+.espacio .parrafoestilo {
+  font-size: 1.3rem;
+}
+
+.historia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  text-align: justify;
+  padding: 10px;
+  margin-right: 15px;
+}
+.historia .parrafoestilo {
+  font-size: 1.3rem;
+}
+.historia .pozolem {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.ordena {
+  margin: 35px;
+}
+.ordena .iconos {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 100px;
+  margin: auto;
+}
+
+/*Menú*/
+.estilosletras {
+  color: #FF0000;
+}
+
+/*Organización de la grilla del menú*/
+.menu-principal {
+  display: grid;
+  grid-template-areas: "tacos1 tacos2 tacos3" "tex1 tex2 tex3" "caldo1 caldo2 caldo3" "tex4 tex5 tex6" "pozole1 pozole2 pozole3" "tex7 tex8 tex9";
+  grid-template-columns: 32% 32% 32%;
+  grid-template-rows: 350px 100px 400px 100px 350px 100px;
+  row-gap: 10px;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  padding-right: 2px;
+  justify-content: center;
+}
+.menu-principal img {
+  width: 100%;
+  height: 100%;
+}
+.menu-principal .imgm1 {
+  grid-area: tacos1;
+}
+.menu-principal .imgm2 {
+  grid-area: tacos2;
+}
+.menu-principal .imgm3 {
+  grid-area: tacos3;
+}
+.menu-principal .pt1 {
+  grid-area: tex1;
+}
+.menu-principal .pt2 {
+  grid-area: tex2;
+}
+.menu-principal .pt3 {
+  grid-area: tex3;
+}
+.menu-principal .imgm4 {
+  grid-area: caldo1;
+}
+.menu-principal .imgm5 {
+  grid-area: caldo2;
+}
+.menu-principal .imgm6 {
+  grid-area: caldo3;
+}
+.menu-principal .pt4 {
+  grid-area: tex4;
+}
+.menu-principal .pt5 {
+  grid-area: tex5;
+}
+.menu-principal .pt6 {
+  grid-area: tex6;
+}
+.menu-principal .imgm7 {
+  grid-area: pozole1;
+}
+.menu-principal .imgm8 {
+  grid-area: pozole2;
+}
+.menu-principal .imgm9 {
+  grid-area: pozole3;
+}
+.menu-principal .pt7 {
+  grid-area: tex7;
+}
+.menu-principal .pt8 {
+  grid-area: tex8;
+}
+.menu-principal .pt9 {
+  grid-area: tex9;
+}
+
+/*Login*/
+.estilosletras {
+  color: #FF0000;
+}
+
+form {
+  margin-top: 10%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+form ul {
+  list-style-type: none;
+}
+
+h2 {
+  color: #FF0000;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/*Registrarse*/
+.estilosletras {
+  color: #FF0000;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    align-items: center;
+  }
+  header img {
+    width: 70px;
+    flex-direction: center;
+    margin: 0;
+    padding: 0;
+  }
+  nav {
+    width: 100%;
+  }
+  nav ul {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  /*grid padre*/
+  /* titulo*/
+  h1 {
+    font-size: 3rem;
+  }
+  .parrafo {
+    font-size: 1.3rem;
+    margin: 2px;
+  }
+  /*media screen  menú*/
+  .menu-principal {
+    grid-template-areas: "tacos1" "tex1" "tacos2" "tex2" "tacos3" "tex3" "caldo1" "tex4" "caldo2" "tex5" "caldo3" "tex6" "pozole1" "tex7" "pozole2" "tex8" "pozole3" "tex9";
+    grid-template-columns: 100%;
+  }
+  .parrafoestilo {
+    font-size: 1rem;
+  }
+  /*conocenos*/
+  .historia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+  }
+  .historia .pozolem {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 15px;
+  }
+  .ordena {
+    width: 100px;
+  }
+  .ordena section .mover {
+    width: 95%;
+    height: 95%;
+    margin: 3px;
+  }
+}
+/*Header*/
+header {
+  background-color: #FF0000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  /*logo del header*/
+  /*navegación links de la pagina*/
+}
+header img {
+  width: 80px;
+  margin-top: 6px;
+  margin-left: 6px;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: left;
+}
+header nav {
+  width: 60%;
+  height: 100%;
+  /*lista del nav*/
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /*animación del nav*/
+}
+header nav ul a {
+  color: aliceblue;
+  text-decoration: none;
+}
+header nav ul a:hover {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  color: rgb(241, 197, 131);
+}
+
+/*Banner del index*/
+.banner {
+  background-image: url(../img/ajochile.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 150px 0px;
+  text-align: center;
+  text-shadow: 0px 0px 2px rgba(77, 70, 70, 0.6);
+}
+.banner h1 {
+  color: beige;
+  font-size: 90px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/*Primer parrafo de la pagina*/
+.parrafo {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #FF0000;
+}
+
+.parrafo:hover {
+  color: black;
+}
+
+/*Grilla del index*/
+.grid-p {
+  display: grid;
+  grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 img8 img9";
+  grid-template-columns: 33% 34% 33%;
+  grid-template-rows: 300px repeat(2, 350px);
+  row-gap: 5px;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  padding-right: 5px;
+}
+.grid-p img {
+  width: 100%;
+  height: 100%;
+}
+.grid-p .grid-img1 {
+  grid-area: img1;
+}
+.grid-p .grid-img2 {
+  grid-area: img2;
+}
+.grid-p .grid-img3 {
+  grid-area: img3;
+}
+.grid-p .grid-img4 {
+  grid-area: img4;
+}
+.grid-p .grid-img5 {
+  grid-area: img5;
+}
+.grid-p .grid-img6 {
+  grid-area: img6;
+}
+.grid-p .grid-img7 {
+  grid-area: img7;
+}
+.grid-p .grid-img8 {
+  grid-area: img8;
+}
+.grid-p .grid-img9 {
+  grid-area: img9;
+}
+
+/*sección te ofrecemos*/
+h2 {
+  color: #FF0000;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.espacio {
+  margin: 50px;
+}
+.espacio .iconos {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 100px;
+  margin: auto;
+}
+
+/*Sección visitanos y contactanos*/
+section {
+  color: #FF0000;
+  text-decoration: none;
+  text-align: center;
+  margin: 15px;
+}
+section p {
+  color: #FF0000;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+section a {
+  color: #FF0000;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+/*footer*/
+footer {
+  background-color: #FF0000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer img {
+  width: 50px;
+  margin: 5px;
+}
+footer h4 {
+  color: aliceblue;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}/*# sourceMappingURL=estilos.css.map */

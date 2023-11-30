@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+
+/*body*/
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+section p{
+    color: aliceblue;
+    font-size: 0.5rem;
+    }
+
+@import "partials/variables";
+@import "partials/conocenos";
+@import "partials/menu";
+@import "partials/login";
+@import "partials/registrarse";
+@import "partials/mediaq";
+
+/*Header*/
+
+header{
+    background-color: $coral;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+
+    /*logo del header*/
+    img{
+        width: 80px;
+        margin-top: 6px;
+        margin-left: 6px;
+        margin-bottom: 6px;
+        display: flex;
+        justify-content:left;
+    
+    }
+
+    /*navegación links de la pagina*/
+nav{
+    width:60%;  
+    height: 100%;
+
+    /*lista del nav*/
+
+    ul {
+
+        list-style-type: none;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+    
+        a{
+
+            color: aliceblue;
+            text-decoration: none;
+
+        } 
+        /*animación del nav*/
+        a:hover{
+            font-family: $font;
+            font-size: 1.5rem;
+            color: rgb(241, 197, 131);
+            }
+    }
+  
+  }
+}
+
+/*Banner del index*/
+
+.banner{
+    background-image: url(../img/ajochile.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px 0px;
+    text-align: center;
+    text-shadow: 0px 0px 2px rgba(77,70,70,0.6);
+    
+
+    h1{
+        color: beige;
+        font-size: 90px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+}
+
+
+
+/*Primer parrafo de la pagina*/
+.parrafo{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 15px;
+    color: $coral;
+}
+
+.parrafo:hover {
+    color:black;
+   }
+
+/*Grilla del index*/
+.grid-p{
+    display: grid;
+    grid-template-areas: 
+    "img1 img2 img3"
+    "img4 img5 img6"
+    "img7 img8 img9";
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: 300px repeat(2, 350px);
+    row-gap: 5px;
+    column-gap: 5px;
+    padding-right: 5px;
+    img{
+        width: 100%;
+        height: 100%;
+        }
+        .grid-img1{
+            grid-area: img1;
+        }
+        .grid-img2{
+            grid-area: img2;
+        }
+        .grid-img3{
+            grid-area: img3;
+        }
+        .grid-img4{
+            grid-area: img4;
+        }
+        .grid-img5{
+            grid-area: img5;
+        }
+        .grid-img6{
+            grid-area: img6;
+        }
+        .grid-img7{
+            grid-area: img7;
+        }
+        .grid-img8{
+            grid-area: img8;
+        }
+        .grid-img9{
+            grid-area: img9;
+        }
+
+
+    }
+
+    /*sección te ofrecemos*/
+    h2{
+        color: $coral;
+        font-size: 2rem;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .espacio{
+        margin: 50px;
+        .iconos{
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            height: 100px;
+            margin: auto;
+        }
+
+    }
+
+    /*Sección visitanos y contactanos*/
+    
+
+    section {
+        color: $coral;
+        text-decoration: none;
+        text-align: center;
+        margin: 15px;
+
+        p{
+            color: $coral;
+            text-decoration: none;
+            font-size: .8rem;
+        }
+    
+        a{
+            color: $coral;
+            text-decoration: none;
+            font-size: .8rem;
+        }
+    }  
+
+
+    
+/*footer*/
+
+footer{
+    background-color: $coral;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    ul{
+
+        list-style-type: none;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+    
+    }
+    img{
+        width: 50px;
+        margin: 5px;
+       }
+    
+       h4{
+        color: aliceblue;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}

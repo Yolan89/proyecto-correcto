@@ -1,0 +1,83 @@
+/*Menú*/
+
+.estilosletras{
+    color: $coral;
+}
+
+/*Organización de la grilla del menú*/
+.menu-principal{
+    display: grid;
+    grid-template-areas:
+    "tacos1 tacos2 tacos3"
+    "tex1 tex2 tex3"
+    "caldo1 caldo2 caldo3"
+    "tex4 tex5 tex6"
+    "pozole1 pozole2 pozole3"
+    "tex7 tex8 tex9";
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: 350px 100px 400px 100px 350px 100px ;
+    row-gap: 10px;
+    column-gap: 8px;
+    padding-right: 2px;
+    justify-content: center;
+
+     img{
+        width: 100%;
+        height: 100%;
+    }
+    .imgm1{
+        grid-area: tacos1;
+    }
+    .imgm2{
+        grid-area: tacos2;
+    }
+    
+    .imgm3{
+        grid-area: tacos3;
+    }
+    .pt1{
+        grid-area: tex1;
+    }
+    .pt2{
+        grid-area: tex2;
+    }
+    .pt3{
+        grid-area: tex3;
+    }
+    .imgm4{
+        grid-area: caldo1;
+    }
+    .imgm5{
+        grid-area: caldo2;
+    }
+    .imgm6{
+        grid-area: caldo3;
+    }
+    .pt4{
+        grid-area: tex4;
+    }
+    .pt5{
+        grid-area: tex5;
+    }
+    .pt6{
+        grid-area: tex6;
+    }
+    .imgm7{
+        grid-area: pozole1;
+    }
+    .imgm8{
+        grid-area: pozole2;
+    }
+    .imgm9{
+        grid-area: pozole3;
+    }
+    .pt7{
+        grid-area: tex7;
+    }
+    .pt8{
+        grid-area: tex8;
+    }
+    .pt9{
+        grid-area: tex9;
+    }
+}
