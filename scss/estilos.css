@@ -207,7 +207,6 @@ h2 {
     margin-left: 0px;
     margin-top: 0px;
   }
-  /*grid padre*/
   /* titulo*/
   h1 {
     font-size: 3rem;
@@ -330,6 +329,7 @@ header nav ul a:hover {
   -moz-column-gap: 5px;
        column-gap: 5px;
   padding-right: 5px;
+  justify-content: center;
 }
 .grid-p img {
   width: 100%;
